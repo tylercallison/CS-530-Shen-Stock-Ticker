@@ -20,3 +20,10 @@ Our project was to create a working prototype of a stock ticker with near-real-t
 
 `sudo python3 -m pip install --upgrade luma.led_matrix`
 
+## Running the program
+
+1. CD into the folder where the python files are installed and run the command:
+
+`python3 YahooStockTicker.py`
+
+![alt text](https://github.com/tylercallison/CS-530-Shen-Stock-Ticker/blob/main/IMG_2313.jpg?raw=true)
