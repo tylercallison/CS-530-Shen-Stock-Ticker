@@ -1,9 +1,14 @@
 # CS-530-Shen-Stock-Ticker
 Stock Ticker for Final Project for CS-530 with Professor Shen at SDSU
 
-LED Screens that use the MAX7219 Chipset required.
+## Summary
+Our project was to create a working prototype of a stock ticker with near-real-time stock information. Since stock tickers are extremely expensive, we wanted to create an affordable, product by creating our own. We successfully created a working prototype with near-real-time stock information provided by Yahoo Finance data. Our Python script runs on any Rasberry Pi that can connect to an LED panel (MAX7219 Chipset required) through GPIO pins to scrape stock information from Yahoo’s REST API and convert the processed text to visual output that can be displayed on an LED screen in a rolling format. We completed all of the necessary tasks for a working prototype.
 
-Installing necessary software:
+## Requirements
+1. LED Screens that use the MAX7219 Chipset required.
+2. Any Raspberry Pi with GPIO pins
+
+## Installing necessary software:
 
 1. Enable SPI on Raspberry Pi
 2. Install Necessary Drivers
