@@ -58,32 +58,12 @@ device = max7219(serial, rotate=1, width=8, height=32)
 
 virtual = viewport(device, width=200, height=100)
 
-# msg = "Slow scrolling: The quick brown fox jumps over the lazy dog"
-# print(msg)
-# show_message(device, msg, fill="white", scroll_delay=0.1)
-
-time.sleep(3)
-
-
 while True:
     for stock in stocks:
         try:
             stock.updateStockInfo()
             print(stock)
-            # color = "white"
-            # if stock.pChange > 0:
-            #     color = "green"
-            # elif stock.pChange < 0:
-            #     color = "red"
             show_message(device, str(stock), fill="white", scroll_delay=0.05)
-            # with canvas(virtual) as draw:
-            #     draw.rectangle(device.bounding_box,
-            #                    outline="white", fill="black")
-            #     draw.text((3, 3), "Hello world", fill="white", align='center')
-
-            # # for offset in range(32):
-            # #     virtual.set_position((offset, 0))
-            # time.sleep(1)
         except Exception as e:
             print("Failed to process " + stock.ticker)
             print(e)
